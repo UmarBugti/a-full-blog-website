@@ -1,0 +1,27 @@
+.Contact-content {
+    height: 100vh;
+    /* height: 80vh; */
+    /* background-color: rgb(221, 221, 240); */
+    /* display: flex; */
+    margin-top: 32px;
+    padding: 9px;
+    /* background-image: url(/img/Home.svg.jpg); */
+    position: relative;
+    overflow: hidden;
+}
+
+.Contact-content::after {
+    content: "";
+    background-image: url(/img/Home.svg.jpg);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    border-radius: 12px;
+    z-index: -1;
+}
+
+.Contact-form{
+    height: 80vh;
+}

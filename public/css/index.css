@@ -1,0 +1,101 @@
+/* General Container Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Form Container */
+.form-container {
+    padding: 20px;
+}
+
+/* Individual Form Styles */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Hidden Class for Switching Forms */
+.hidden {
+    display: none;
+}
+
+/* Input Styles */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Button Styles */
+button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+/* Toggle Link Styles */
+.toggle-link {
+    text-align: center;
+    font-size: 14px;
+    color: #555555;
+}
+
+.toggle-link span {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.toggle-link span:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        margin: 0 20px;
+    }
+}

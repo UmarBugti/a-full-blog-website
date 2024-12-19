@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    margin-top: 25px;
+    font-family: var(--font2);
+    /* height: 70px; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-left span {
+    font-size: 35px;
+    padding-top: 8px;
+
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 77px;
+    font-size: 22px;
+    padding-bottom: 9px;
+}
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font2);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left ul li :hover {
+    color: var(--main-bg-color);
+    font-weight: bolder;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.nav-right {}
+
+.content-left {
+    font-family: var(--font2);
+    /* width: 50%; */
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    z-index: 1;
+
+}
+
+.content-right {
+    /* width: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right img {
+    height: 266px;
+    border-radius: 200px;
+    border: 2px solid black;
+}
+
+.content {
+    height: 100%px;
+    /* background-color: rgb(216, 216, 245); */
+    display: flex;
+    margin-top: 32px;
+    padding: 9px;
+    /* background-image: url(/img/Home.svg.jpg); */
+    position: relative;
+}
+
+.content::after {
+    content: "";
+    background-image: url(../img/Home.svg.jpg);
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    border-radius: 12px;
+}
+
+.Home-articals {
+    /* height: 455px; */
+    padding: 18px;
+    background-color: rgb(227, 220, 220, 0.5);
+    margin-top: 23px;
+    position: relative;
+
+}
+
+.year-box{
+    position: absolute;
+    /* background-color: red; */
+    /* right: 42px; */
+    right: 0px;
+    top: 100px;
+    /* top: 30px; */
+    /* width: 122px; */
+    width: 234px;
+    height: 255px;
+    /* height: 155px; */
+    font-size: 18px;
+}
+.year-box div{
+    margin: 12px 0px;
+}
+
+.Home-artical {
+    display: flex;
+    /* padding: 50px; */
+    margin: 25px;
+
+}
+
+.Home-artical img {
+    width: 300px;
+}
+
+.home-article-content {
+    align-self: center;
+    padding: 25px;
+}
+.home-article-content a{
+    text-decoration: none;
+    color: black;
+}
+
+/* .Home-articals{} */
+
+.footer {
+    height: 50px;
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.footer a {
+    color: white;
+}
